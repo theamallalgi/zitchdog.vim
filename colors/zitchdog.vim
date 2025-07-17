@@ -248,7 +248,7 @@ highlight! link lCursor Cursor
 highlight! link CursorIM Cursor
 call s:HL('CursorColumn', s:palette.none, s:palette.charcoal)
 call s:HL('CursorLine', s:palette.none, s:palette.charcoal)
-call s:HL('LineNr', s:palette.purple, s:palette.none)
+call s:HL('LineNr', s:palette.amethyst, s:palette.none)
 if &relativenumber == 1 && &cursorline == 0
   call s:HL('CursorLineNr', s:palette.lilac, s:palette.none)
 else

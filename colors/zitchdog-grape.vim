@@ -179,7 +179,8 @@ call s:HL('CursorColumn', s:palette.none, s:palette.charcoal)
 call s:HL('CursorLine', s:palette.none, s:palette.charcoal)
 call s:HL('LineNr', s:palette.amethyst, s:palette.none)
 if &relativenumber == 1 && &cursorline == 0
-  call s:HL('CursorLineNr', s:palette.lilac, s:palette.none)
+  call s:HL('CursorLineNr', s:palette.y
+  lilac, s:palette.none)
 else
   call s:HL('CursorLineNr', s:palette.lilac, s:palette.charcoal)
 endif
