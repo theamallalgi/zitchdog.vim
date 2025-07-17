@@ -62,6 +62,7 @@ let s:configuration.current_word = get(g:, 'zitchdog_current_word', get(g:, 'zit
         \ 'teal':       ['#08313f', '23', 'DarkCyan'],
         \ 'lightblack': ['#100d17', '233', 'DarkGrey'],
         \ 'darkblack':  ['#0b080e', '232', 'Black'],
+        \ 'purple_faded': ['#281a42', '140', 'LightMagenta'],
         \ 'none':       ['NONE', 'NONE', 'NONE']
         \ }
 
@@ -176,7 +177,7 @@ highlight! link lCursor Cursor
 highlight! link CursorIM Cursor
 call s:HL('CursorColumn', s:palette.none, s:palette.charcoal)
 call s:HL('CursorLine', s:palette.none, s:palette.charcoal)
-call s:HL('LineNr', s:palette.purple, s:palette.none)
+call s:HL('LineNr', s:palette.purple_faded, s:palette.none)
 if &relativenumber == 1 && &cursorline == 0
   call s:HL('CursorLineNr', s:palette.lilac, s:palette.none)
 else
