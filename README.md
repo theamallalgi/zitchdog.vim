@@ -1,6 +1,6 @@
 # zitchdog.vim
 
-A Vim port of the [zitchdog](https://github.com/zitchdog/zitchdog.nvim) color scheme for Neovim.
+A Vim port of the [zitchdog](https://github.com/theamallalgi/zitchdog) color scheme for Neovim.
 
 This color scheme comes in three variants: `night`, `grape`, and `pine`.
 
@@ -11,19 +11,19 @@ You can install this color scheme using your favorite Vim plugin manager.
 ### Vundle
 
 ```vim
-Plugin 'zitchdog/zitchdog.vim'
+Plugin 'theamallalgi/zitchdog.vim'
 ```
 
 ### Pathogen
 
 ```bash
-git clone https://github.com/zitchdog/zitchdog.vim.git ~/.vim/bundle/zitchdog.vim
+git clone https://github.com/theamallalgi/zitchdog.vim.git ~/.vim/bundle/zitchdog.vim
 ```
 
 ### vim-plug
 
 ```vim
-Plug 'zitchdog/zitchdog.vim'
+Plug 'theamallalgi/zitchdog.vim'
 ```
 
 ## Usage
@@ -44,5 +44,3 @@ let g:zitchdog_style = 'grape'
 " Set the color scheme
 colorscheme zitchdog
 ```
-
-**Note:** The `night` variant is based on the `tokyonight.vim` color scheme, which is included in this repository.
