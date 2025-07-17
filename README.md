@@ -1,8 +1,10 @@
 ![HEADER IMAGE](https://github.com/theamallalgi/zitchdog.vim/blob/main/dependencies/header.png?raw=true)
+
 # Zitchdog.vim
+
 A Vim port of the [zitchdog](https://github.com/theamallalgi/zitchdog) color scheme for Neovim.
 
->[!NOTE]
+> [!NOTE]
 > This color scheme comes in three variants: `night`, `grape`, and `pine`.
 
 ## Installation
@@ -45,3 +47,9 @@ let g:zitchdog_style = 'grape'
 " Set the color scheme
 colorscheme zitchdog
 ```
+
+## Screenshots
+
+![GRAPE VARIANT A](https://github.com/theamallalgi/zitchdog.vim/blob/main/dependencies/sht-g-a.png?raw=true)
+
+![GRAPE VARIANT B](https://github.com/theamallalgi/zitchdog.vim/blob/main/dependencies/sht-g-b.png?raw=true)
