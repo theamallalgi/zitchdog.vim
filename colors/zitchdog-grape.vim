@@ -1,5 +1,5 @@
 " -----------------------------------------------------------------------------
-" Name:         zitchdog
+" Name:         zitchdog-grape
 " Description:  A port of the zitchdog neovim theme to vim.
 " Author:       Your Name
 " Website:      
@@ -16,11 +16,11 @@ set background=dark
 let s:t_Co = exists('&t_Co') && !empty(&t_Co) && &t_Co > 1 ? &t_Co : 2
 let s:tmux = executable('tmux') && $TMUX !=# ''
 
-let g:colors_name = 'zitchdog'
+let g:colors_name = 'zitchdog-grape'
 " }}}
 " Configuration: {{{
 let s:configuration = {}
-let s:configuration.style = get(g:, 'zitchdog_style', 'night')
+let s:configuration.style = get(g:, 'zitchdog_style', 'grape')
 let s:configuration.transparent_background = get(g:, 'zitchdog_transparent_background', 0)
 let s:configuration.menu_selection_background = get(g:, 'zitchdog_menu_selection_background', 'green')
 let s:configuration.disable_italic_comment = get(g:, 'zitchdog_disable_italic_comment', 0)
@@ -30,42 +30,6 @@ let s:configuration.current_word = get(g:, 'zitchdog_current_word', get(g:, 'zit
 " }}}
 " Palette: {{{
 "
-if s:configuration.style ==# 'night'
-  let s:palette = {
-        \ 'purple':     ['#a277ff', '141', 'Magenta'],
-        \ 'green':      ['#61ffca', '84', 'Green'],
-        \ 'orange':     ['#ffca85', '215', 'Orange'],
-        \ 'coral':      ['#ff7b7b', '210', 'Red'],
-        \ 'cyan':       ['#26f9eb', '117', 'Cyan'],
-        \ 'red':        ['#ff6767', '203', 'Red'],
-        \ 'pink':       ['#f694ff', '212', 'Magenta'],
-        \ 'white':      ['#f6ceff', '253', 'White'],
-        \ 'gray':       ['#6d6d6d', '242', 'DarkGrey'],
-        \ 'ash':        ['#29263c', '237', 'DarkGrey'],
-        \ 'black':      ['#15141b', '235', 'Black'],
-        \ 'darkblack':  ['#131218', '233', 'Black'],
-        \ 'magenta':    ['#a277ff', '216', 'Orange'],
-        \ 'yellow':     ['#ffca85', '222', 'Yellow'],
-        \ 'mauve':      ['#3d375e', '237', 'DarkGrey'],
-        \ 'blue':       ['#82e2ff', '111', 'Blue'],
-        \ 'charcoal':   ['#15141b', '236', 'DarkGrey'],
-        \ 'slate':      ['#542a91', '239', 'Grey'],
-        \ 'graphite':   ['#272045', '240', 'Grey'],
-        \ 'lilac':      ['#776eae', '183', 'Magenta'],
-        \ 'amethyst':   ['#333352', '141', 'Magenta'],
-        \ 'aubergine':  ['#232338', '59', 'DarkMagenta'],
-        \ 'ebony':      ['#12121c', '235', 'Black'],
-        \ 'maroon':     ['#652929', '52', 'DarkRed'],
-        \ 'pine':       ['#123127', '22', 'DarkGreen'],
-        \ 'indigo':     ['#345a65', '17', 'DarkBlue'],
-        \ 'umber':      ['#4b3b27', '58', 'DarkRed'],
-        \ 'clay':       ['#4b2424', '52', 'DarkYellow'],
-        \ 'mulberry':   ['#433e62', '53', 'DarkMagenta'],
-        \ 'teal':       ['#0e5e59', '23', 'DarkCyan'],
-        \ 'lightblack': ['#1a1b26', '237', 'DarkGrey'],
-        \ 'none':       ['NONE', 'NONE', 'NONE']
-        \ }
-elseif s:configuration.style ==# 'grape'
   let s:palette = {
         \ 'purple':     ['#8543e4', '99', 'Magenta'],
         \ 'green':      ['#46cda8', '43', 'Green'],
@@ -100,42 +64,6 @@ elseif s:configuration.style ==# 'grape'
         \ 'darkblack':  ['#0b080e', '232', 'Black'],
         \ 'none':       ['NONE', 'NONE', 'NONE']
         \ }
-else
-  let s:palette = {
-        \ 'purple':     ['#844364', '96', 'Magenta'],
-        \ 'green':      ['#46914d', '29', 'Green'],
-        \ 'cyan':       ['#188e5c', '30', 'Cyan'],
-        \ 'orange':     ['#e47833', '166', 'Orange'],
-        \ 'coral':      ['#e4462f', '161', 'Red'],
-        \ 'red':        ['#e43728', '160', 'Red'],
-        \ 'pink':       ['#da5b64', '161', 'Magenta'],
-        \ 'white':      ['#da7a64', '167', 'White'],
-        \ 'gray':       ['#513c2a', '52', 'DarkGrey'],
-        \ 'ash':        ['#191219', '233', 'DarkGrey'],
-        \ 'black':      ['#0d0910', '232', 'Black'],
-        \ 'mauve':      ['#281b24', '234', 'DarkGrey'],
-        \ 'blue':       ['#658265', '65', 'Blue'],
-        \ 'yellow':     ['#e37832', '166', 'Yellow'],
-        \ 'magenta':    ['#834264', '96', 'Orange'],
-        \ 'charcoal':   ['#0d0910', '232', 'DarkGrey'],
-        \ 'slate':      ['#542a91', '55', 'Grey'],
-        \ 'graphite':   ['#272045', '235', 'Grey'],
-        \ 'lilac':      ['#5a3b42', '52', 'Magenta'],
-        \ 'amethyst':   ['#201520', '233', 'Magenta'],
-        \ 'aubergine':  ['#151019', '233', 'DarkMagenta'],
-        \ 'ebony':      ['#0a090f', '232', 'Black'],
-        \ 'maroon':     ['#481214', '52', 'DarkRed'],
-        \ 'pine':       ['#0a1613', '233', 'DarkGreen'],
-        \ 'indigo':     ['#212e27', '235', 'DarkBlue'],
-        \ 'umber':      ['#321c12', '234', 'DarkRed'],
-        \ 'clay':       ['#331011', '52', 'DarkYellow'],
-        \ 'mulberry':   ['#2d1e26', '234', 'DarkMagenta'],
-        \ 'teal':       ['#083122', '22', 'DarkCyan'],
-        \ 'lightblack': ['#100d17', '233', 'DarkGrey'],
-        \ 'darkblack':  ['#0b080e', '232', 'Black'],
-        \ 'none':       ['NONE', 'NONE', 'NONE']
-        \ }
-endif
 
 " }}}
 " Function: {{{
