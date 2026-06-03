@@ -1,4 +1,4 @@
-![HEADER IMAGE](https://github.com/theamallalgi/zitchdog.vim/blob/main/dependencies/header.png?raw=true)
+![HEADER IMAGE](https://github.com/theamallalgi/zitchdog.vim/blob/main/dependencies/header.jpg?raw=true)
 
 # Zitchdog.vim
 
